@@ -22,8 +22,8 @@
     <canvas id = chart></canvas>
   </div>
   <script>
-    const data =[6, 12, 12, 18,18,20,25,10,15,0,9,9,192];
-    const totalDuration=300; /*lower duration, faster animation*/
+    const data =[0,6,12,18,25,10,15,0,9,192];
+    const totalDuration=1000; /*lower duration, faster animation*/
     const delayBetweenPoints=totalDuration/data.length;
     const previousY=ctx=>
       ctx.index===0
@@ -57,7 +57,7 @@
         labels:["August","September","October","November","December","January","Feburary","March","April","May"],
         datasets:[{
           label:"Coffee Spending",
-          data: [0,6, 12, 12, 18,18,20,25,10,15,0,9,9,192],
+          data: [0,6,12,18,25,10,15,0,9,192],
 
           borderColor: "#FF0145",
           backgroundColor:"#E3DCDC",
